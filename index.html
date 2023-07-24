@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Embedded Streamlit App</title>
+</head>
+<body>
+    <h1>Embedded Streamlit App</h1>
+
+    <label for="inputValue">Enter a value:</label>
+    <input type="text" id="inputValue" />
+
+    <button onclick="sendInputValue()">Submit</button>
+
+    <div id="streamlitContainer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@streamlit/streamlit@1.0.0/dist/streamlit.js"></script>
+    <script>
+        const streamlitIFrame = document.createElement('iframe');
+        streamlitIFrame.src = 'http://localhost:8501';
+        document.getElementById('streamlitContainer').appendChild(streamlitIFrame);
+
+        function sendInputValue() {
+            var inputValue = document.getElementById("inputValue").value;
+            var message = { input: inputValue };
+            streamlitIFrame.contentWindow.postMessage(message, 'http://localhost:8501');
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Image Carousel</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .carousel-inner {
+      background-color: black;
+    }
+    .carousel-indicators li {
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Image Carousel</h2>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/ipl/210/236.png" alt="Image 1" style="width:100%;">
+            </div>
+            <div class="col-md-4">
+              <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/2.png" alt="Image 2" style="width:100%;">
+            </div>
+            <div class="col-md-4">
+              <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/ipl/210/233.png" alt="Image 3" style="width:100%;">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/28.png" alt="Image 4" style="width:100%;">
+            </div>
+            <div class="col-md-4">
+              <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/57.png" alt="Image 5" style="width:100%;">
+            </div>
+            <div class="col-md-4">
+              <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/141.png" alt="Image 6" style="width:100%;">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="https://assets.iplt20.com/ipl/IPLHeadshot2022/25.png" alt="Image 7" style="width:100%;">
+            </div>
+            <div class="col-md-4">
+              <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/218.png" alt="Image 8" style="width:100%;">
+            </div>
+            <div class="col-md-4">
+              <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/15.png" alt="Image 9" style="width:100%;">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/ipl/210/211.png" alt="Image 10" style="width:100%;">
+            </div>
+            <div class="col-md-4">
+              <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/156.png" alt="Image 11" style="width:100%;">
+            </div>
+            <!-- Add placeholders for the remaining images in the last slide -->
+
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
